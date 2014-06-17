@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mohsen1/better-console"
+    "url": "git://github.com/zhangwen/better-console"
   },
   "keywords": [
     "console"
@@ -16,7 +16,7 @@
   "author": "Mohsen Azimi",
   "license": "BSD",
   "dependencies": {
-    "colors": "~0.6.0-1",
-    "cli-table": "~0.2.0"
+    "colors": "~0.6.2",
+    "cli-table": "~0.3.0"
   }
 }

@@ -1,5 +1,5 @@
-var console = require('./index');
-
+//var console = require('./index');
+require('./index');
 console.log('Something');
 console.clear();
 console.info('Console should be clean now');
@@ -45,6 +45,7 @@ console.error('');
 
 
 
+console.count('me');
 console.count('me');
 console.count('me');
 
