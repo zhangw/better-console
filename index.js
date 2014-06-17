@@ -26,7 +26,7 @@
         warn:'yellow',
         error:'red'
       } 
-    },  
+    },
     
     // Writes a message to the console. You may pass as many arguments as
     // you'd like, and they will be joined together in a space-delimited line.
@@ -40,7 +40,7 @@
         preservedLog.apply(this, arguments);
       }   
     }, 
-
+      
     // Writes a message to the console with blue color
     info: function(){
       logWithColor(betterlog.options.colors.info || 'blue', arguments);
