@@ -18,28 +18,42 @@
   }
 
   var betterlog = {
-
+    // the options
+    options: {
+      colors:{
+        log:'rainbow',
+        info:'blue',
+        warn:'yellow',
+        error:'red'
+      } 
+    },  
+    
     // Writes a message to the console. You may pass as many arguments as
     // you'd like, and they will be joined together in a space-delimited line.
     // The first argument to log may be a string containing
     // printf-like string substitution patterns.
     log: function(){
-      preservedLog.apply(this, arguments);
-    },
+      if(betterlog.options.colors.log){
+        logWithColor(betterlog.options.colors.log, arguments);  
+      }   
+      else{
+        preservedLog.apply(this, arguments);
+      }   
+    }, 
 
     // Writes a message to the console with blue color
     info: function(){
-      logWithColor('blue', arguments);
+      logWithColor(betterlog.options.colors.info || 'blue', arguments);
     },
 
     // Writes a message to the console with yellow color
     warn: function(){
-      logWithColor('yellow', arguments, true);
+      logWithColor(betterlog.options.colors.warn || 'yellow', arguments, true);
     },
 
     // Writes a message to the console with red color
     error: function(){
-      logWithColor('red', arguments, true);
+      logWithColor(betterlog.options.colors.error || 'red', arguments, true);
     },
 
     // Writes a message to the console with regular color
