@@ -1,14 +1,14 @@
 {
   "name": "better-console",
   "version": "0.2.3",
-  "description": "A better console for Node.js",
+  "description": "A better console for Node.js,and I forked it from mohsen1/better-console.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/zhangwen/better-console"
+    "url": "https://github.com/zhangw/better-console.git"
   },
   "keywords": [
     "console"
